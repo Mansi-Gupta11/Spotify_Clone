@@ -86,6 +86,12 @@ const makeAllPlays = ()=>{
     })
 }
 
+const makeAllPause = ()=>{
+    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+        element.classList.remove('fa-play-circle');
+        element.classList.add('fa-pause-circle');
+    })
+}
 
 
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
